@@ -1,0 +1,15 @@
+{
+  "name": "23_04_27",
+  "version": "1.0.0",
+  "description": "",
+  "main": "곽윤호.js",
+  "scripts": {
+    "test": "node 곽윤호.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.0"
+  }
+}

@@ -47,6 +47,7 @@
       moveButton.addEventListener('click',()=>{
         // console.dir(first);
         // console.dir(second);
+        if (first.children[0].children.length === 0) {console.log('hello :D')}
         second.children[0].appendChild(first.children[0].children[0]);
       })
     </script>

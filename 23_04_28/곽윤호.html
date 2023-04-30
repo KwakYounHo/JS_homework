@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      button {
+        border-radius: 5px;
+        color: #333;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="move-button">move!</button>
+    <div id="root">
+      <!-- 첫번째 부모 first -->
+      <div id="first">
+        <ul>
+          <li>first-1</li>
+          <li>first-2</li>
+          <li>first-3</li>
+        </ul>
+      </div>
+      <!-- 두번째 부모 second -->
+      <div id="second">
+        <ul>
+          <li>second-1</li>
+          <li>second-2</li>
+          <li>second-3</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const first = document.getElementById('first');
+      const second = document.getElementById('second');
+      const moveButton = document.getElementById('move-button');
+  // Q.1 식별자 moveButton을 누르면, first의 첫번째 자식을 second의 마지막 자식으로 이동시키는 코드를 작성해주세요.
+  // Q.2 #first 의 ul 태그의 자식들이(li태그)가 모두 second로 이동했다면,
+  // Q.3 모든 #root 태그의 모든 자식을 삭제 하여 사실상 백지화를 시키세요.
+  // Q.4 1초뒤에 "hello!" 라는 문구가 나타나게 하세요.
+
+      
+      moveButton.addEventListener('click',()=>{
+        // console.dir(first);
+        // console.dir(second);
+        second.children[0].appendChild(first.children[0].children[0]);
+      })
+    </script>
+  </body>
+</html>

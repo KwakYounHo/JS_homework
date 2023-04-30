@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "곽윤호.js",
+  "type": "module",
   "scripts": {
     "test": "node 곽윤호.js"
   },

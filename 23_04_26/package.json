@@ -1,0 +1,16 @@
+{
+  "name": "23_04_26",
+  "version": "1.0.0",
+  "description": "",
+  "main": "곽윤호.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.0"
+  }
+}

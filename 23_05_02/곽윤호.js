@@ -14,39 +14,28 @@ const b = 20;
 //?================================================================================
 
 class Calculator {
-  constructor(a,b) {
-    this._a = a;
-    this._b = b;
-  }
-
-  //* setter
-  set _a(value) {
-    this.checkInt(value)
-    this.a = value;
-  }
-  set _b(value) {
-    this.checkInt(value)
-    this.b = value;
-  }
-  
   //* helper function
-  checkInt(data) {
-    if (!Number.isInteger(data)) {
+  checkInt(a,b) {
+    if (!Number.isInteger(a) && !Number.isInteger(b)) {
       const typeError = new Error('매개변수는 정수타입이어야 합니다.');
       throw typeError;
     }
   }
-  add() {
-    return this.a + this.b;
+  add(a,b) {
+    this.checkInt(a,b);
+    return a + b;
   }
-  minus() {
-    return this.a - this.b;
+  minus(a,b) {
+    this.checkInt(a,b);
+    return a - b;
   }
-  divide() {
-    return this.a / this.b;
+  divide(a,b) {
+    this.checkInt(a,b);
+    return a / b;
   }
-  multiply() {
-    return this.a * this.b;
+  multiply(a,b) {
+    this.checkInt(a,b);
+    return a * b;
   }
 }
 
@@ -56,11 +45,15 @@ class Calculator {
 
 
 //* helper function test
-const sample = new Calculator(243,123);
-console.log(sample.add());
-console.log(sample.minus());
-console.log(sample.divide());
-console.log(sample.multiply());
+// const sample = new Calculator(243,123);
+// console.log(sample.add());
+// console.log(sample.minus());
+// console.log(sample.divide());
+// console.log(sample.multiply());
+
+//* ?
+const test = new Calculator();
+console.log(test.add(5,6));
 
 //? Q.2 ================================================
 // 

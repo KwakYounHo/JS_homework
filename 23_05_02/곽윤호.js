@@ -39,18 +39,6 @@ class Calculator {
   }
 }
 
-//* setter test
-// const sample = new Calculator('10',20);
-// console.log(sample);
-
-
-//* helper function test
-// const sample = new Calculator(243,123);
-// console.log(sample.add());
-// console.log(sample.minus());
-// console.log(sample.divide());
-// console.log(sample.multiply());
-
 //* ?
 const test = new Calculator();
 console.log(test.add(5,6));
